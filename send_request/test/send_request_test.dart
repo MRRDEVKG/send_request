@@ -45,10 +45,8 @@ void main() async {
           },
           format: 'application/json; charset=UTF-8');
     } catch (e) {
-      print(e.toString());
       expect(e.toString(),
           'Exception: Undefined Method! "Patch" not found in {get, post, delete, put}');
     }
-
   });
 }
